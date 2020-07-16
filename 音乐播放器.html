@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        .fa-heart {
+            font-size: 60px;
+            color: red;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(220, 231, 120, 0.616)
+        }
+
+        .container {
+            width: 500px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: silver;
+        }
+
+        .container .head {
+            background-color: seashell;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+        }
+
+        .container .head span {
+            font-size: 40px;
+            line-height: 80px;
+        }
+
+        .container .detail {
+            height: 500px;
+            width: 100%;
+            background-color: rgba(31, 101, 206, 0.568);
+        }
+
+        .container .detail ul {
+            list-style: none;
+            font-size: 16px;
+        }
+
+        .container .foot {
+            height: 50px;
+            background-color: sandybrown;
+        }
+
+        .container .foot audio {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="head">
+            <i class="fa fa-heart"></i>
+            <span>音乐播放器</span>
+        </div>
+
+        <div class="detail">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <div>绑定数据改src地址即可,用VUE,AJAX</div>
+            </ul>
+        </div>
+
+        <div class="foot">
+            <audio controls="controls" autoplay="autoplay">
+                <source
+                    src="http://m701.music.126.net/20200717013603/76e8edd8acc0f61bbb2a1af73b6fc9e4/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/1764767016/d343/ff8e/2176/63b2fad9da271566fd57bb9dc2f30760.mp3"
+                    type="audio/mpeg" />
+            </audio>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
